@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-trust-stack"
+version = "0.1.0"
+description = "Complete Agent Trust Stack — one install for provenance, reputation, agreements, accountability, lifecycle, discovery, and economics"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.8"
+authors = [
+    { name = "AB Support Research Team", email = "alex@vibeagentmaking.com" },
+]
+keywords = [
+    "agent", "trust", "reputation", "provenance", "agreements",
+    "accountability", "lifecycle", "matchmaking", "economics",
+    "multi-agent", "autonomous", "AI", "infrastructure",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "chain-of-consciousness>=0.1.1",
+    "agent-rating-protocol>=0.3.0",
+    "agent-justice-protocol>=0.1.0",
+    "agent-service-agreements>=0.1.0",
+    "agent-lifecycle-protocol>=0.1.0",
+    "agent-matchmaking>=0.1.0",
+    "context-window-economics>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/theory-of-agent-trust/agent-trust-stack"
+Documentation = "https://vibeagentmaking.com/whitepaper/theory-of-agent-trust/"
+Repository = "https://github.com/theory-of-agent-trust/agent-trust-stack"
+Issues = "https://github.com/theory-of-agent-trust/agent-trust-stack/issues"
+
+[project.scripts]
+trust-stack = "agent_trust_stack.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
