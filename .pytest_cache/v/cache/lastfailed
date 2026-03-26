@@ -1,0 +1,3 @@
+{
+  "tests/test_integration.py::TestIntegrationBusEdgeCases::test_chain_age_empty_chain": true
+}
